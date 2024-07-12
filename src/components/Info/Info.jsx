@@ -77,6 +77,7 @@ function Info() {
             href="https://github.com/GBSW-Spaghetti-Coding-Club"
             className={styles.github}
             target="_blank"
+            rel="noreferrer"
           >
             Github
           </a>
