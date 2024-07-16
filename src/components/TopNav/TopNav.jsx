@@ -15,6 +15,9 @@ function TopNav() {
         <li>
           <a href="/image-generate">프로필 생성</a>
         </li>
+        <li>
+          <a href="/background-generate">배경 생성</a>
+        </li>
       </ul>
     </nav>
   );

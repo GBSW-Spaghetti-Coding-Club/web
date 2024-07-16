@@ -4,6 +4,7 @@ import IndexPage from "./pages";
 import Create from "./pages/create";
 import NotFoundPage from "./pages/404";
 import Information from "./pages/information";
+import Make from "./pages/make";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/" element={<IndexPage />}></Route>
         <Route path="/info" element={<Information />}></Route>
         <Route path="/image-generate" element={<Create />}></Route>
+        <Route path="/background-generate" element={<Make />}></Route>
         <Route path="*" element={<NotFoundPage />}></Route>
       </Routes>
     </div>
