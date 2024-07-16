@@ -11,14 +11,11 @@ function BackgroundGenerate() {
     e.preventDefault();
     setIsLoading(true);
     try {
-      const response = await axiosInstance.get(
-        `http://52.79.117.216:3030/api/gpt/drawPaint`,
-        {
-          params: {
-            nature,
-          },
-        }
-      );
+      const response = await axiosInstance.get(`/api/gpt/drawPaint`, {
+        params: {
+          nature,
+        },
+      });
       setGeneratedBackground(response.data.drawUrl);
     } catch (error) {
       console.error("Error generating background:", error);
